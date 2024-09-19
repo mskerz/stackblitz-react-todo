@@ -1,0 +1,83 @@
+/* ใช้ Flexbox สำหรับการจัดตำแหน่ง */
+.todos-app {
+  margin: 0 auto;
+  width: 300px;
+  font-family: 'Arial', sans-serif;
+}
+.todo-title {
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.todo-add {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.todos-input {
+  width: 70%;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+ 
+.todos-input,
+.todos-add-button {
+  margin-bottom: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+.todos-add-button {
+  padding: 8px 12px;
+  margin-left: 5px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.todos-add-button:hover {
+  background-color: #218838;
+}
+.todos-list {
+  list-style-type:decimal;
+  padding: 0;
+}
+
+.todos-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  background-color: transparent;
+}
+
+.todo-text {
+  flex-grow: 0;
+}
+
+
+.delete-button{
+  background: none;
+  border: none;
+  color: #898989;
+}
+
+.delete-button:focus{
+  outline: none;
+
+}
+
+.todos-filters{
+  display: flex;
+  flex-direction: row;
+   
+}
